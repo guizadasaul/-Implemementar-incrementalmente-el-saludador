@@ -1,5 +1,3 @@
-function sumar(a, b) {
-  return a + b;
+export default function saludar() {
+  alert("¡Hola!");
 }
-
-export default sumar;
