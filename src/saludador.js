@@ -1,3 +1,5 @@
-export default function saludar() {
-  alert("¡Hola!");
+function saludar(nombre) {
+  alert(`Hola, ${nombre}!`);
 }
+
+export default saludar;
