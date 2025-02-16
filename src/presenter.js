@@ -9,16 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
         const nombre = nombreInput.value.trim();
         const genero = generoSelector.value;
-        const edad = edadInput.value;
-        
+        const edad = parseInt (edadInput.value);
+
         if (nombre && edad) {
             saludar(nombre, genero, edad);
         }else if (!nombre && edad) {
-            alert("por favor, introduce tu nombre");
+            alert("por favor introduce tu nombre");
         }else if (!nombre && !edad) {
-            alert("por favor, introduce tus datos");
+            alert("por favor introduce tus datos");
         }else if (nombre && !edad) {
-            alert("por favor, introduce tu edad");
+            alert("por favor introduce tu edad");
         }
     });
 });
