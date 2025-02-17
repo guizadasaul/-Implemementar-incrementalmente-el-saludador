@@ -7,12 +7,18 @@
       <h1>Saludador</h1>
       <input type="text" id="nombre" placeholder="Introduce tu nombre">
       <br><br>
-      <select class="select">
+      <select id="genero">
         <option> Hombre</option>
         <option> Mujer</option>
       </select>
       <br><br>
       <input type="number" id="edad" placeholder="Introduce tu edad" min="1">
+      <br><br>
+      <label for="idioma">Selecciona el idioma:</label>
+      <select id="idioma">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+      </select>
       <br><br>
       <button class="saludar-btn">Saludar</button>
     <script type="module" src="./src/presenter.js"></script>
